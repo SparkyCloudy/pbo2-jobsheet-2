@@ -111,9 +111,9 @@
                   <background color="-3355444"/>
                   <focusable value="false"/>
                   <foreground color="-16777216"/>
-                  <name value="Perempuan"/>
+                  <name resource-bundle="ValueDataDosen" key="radio.wanita"/>
                   <selected value="false"/>
-                  <text resource-bundle="ValueDataDosen" key="radio.perempuan"/>
+                  <text resource-bundle="ValueDataDosen" key="radio.wanita"/>
                   <verifyInputWhenFocusTarget value="true"/>
                 </properties>
               </component>

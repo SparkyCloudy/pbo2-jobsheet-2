@@ -3,30 +3,8 @@ package id.ac.pnb.trpl.pbo2.jobsheet2.entity;
 public class Dosen {
 
   public enum JenisKelamin {
-    LAKI_LAKI(0),
-    PEREMPUAN(1);
-
-    private final int number;
-
-    JenisKelamin(int number) {
-      this.number = number;
-    }
-
-    public String toString() {
-      switch (this.number) {
-        case 0 -> {
-          return "Laki-Laki";
-        }
-
-         case 1 -> {
-           return "Perempuan";
-        }
-
-        default -> {
-          return null;
-        }
-      }
-    }
+    Pria,
+    Wanita;
   }
 
   private String nidn;
@@ -76,8 +54,8 @@ public class Dosen {
     return nama;
   }
 
-  public int getJenisKelamin() {
-    return jenisKelamin.number;
+  public String getJenisKelamin() {
+    return jenisKelamin.toString();
   }
 
   public String getNoTelpon() {

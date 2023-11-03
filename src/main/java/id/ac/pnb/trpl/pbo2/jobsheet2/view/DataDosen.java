@@ -79,10 +79,10 @@ public class DataDosen {
   private Dosen.JenisKelamin checkJenisKelamin() {
     String value = buttonGroupJenisKelamin.getSelection().getActionCommand();
 
-    if (value.equals("Perempuan")) {
-      return Dosen.JenisKelamin.PEREMPUAN;
+    if (value.equals(Dosen.JenisKelamin.Wanita.toString())) {
+      return Dosen.JenisKelamin.Wanita;
     } else {
-      return Dosen.JenisKelamin.LAKI_LAKI;
+      return Dosen.JenisKelamin.Pria;
     }
   }
 }
