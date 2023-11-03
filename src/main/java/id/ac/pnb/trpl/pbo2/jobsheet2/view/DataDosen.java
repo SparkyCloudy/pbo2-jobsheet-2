@@ -10,6 +10,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import java.awt.Font;
 
 public class DataDosen {
@@ -39,12 +40,7 @@ public class DataDosen {
       );
 
       addDataTable(dosen);
-
     });
-
-    hapusButton.addActionListener(
-        e -> System.out.println(buttonGroupJenisKelamin.getSelection().getActionCommand())
-    );
   }
 
   public JPanel getPanelMain() {
@@ -53,10 +49,7 @@ public class DataDosen {
 
   private void createTable() {
     String[] columns = {"NIDN", "Nama", "Jenis Kelamin", "No Telpon"};
-    DefaultTableModel model = new DefaultTableModel(
-        null,
-        columns
-    );
+    TableModel model = new DefaultTableModel(columns, 0);
 
     tableDosen.setModel(model);
     tableDosen.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
