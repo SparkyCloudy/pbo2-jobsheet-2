@@ -71,18 +71,14 @@ public class DataDosen {
     ubahButton.setFocusable(false);
 
     lakiLakiRadioButton.setFocusable(false);
-    lakiLakiRadioButton.setActionCommand("Laki-laki");
+    lakiLakiRadioButton.setActionCommand("Pria");
     perempuanRadioButton.setFocusable(false);
-    perempuanRadioButton.setActionCommand("Perempuan");
+    perempuanRadioButton.setActionCommand("Wanita");
   }
 
   private Dosen.JenisKelamin checkJenisKelamin() {
     String value = buttonGroupJenisKelamin.getSelection().getActionCommand();
 
-    if (value.equals(Dosen.JenisKelamin.Wanita.toString())) {
-      return Dosen.JenisKelamin.Wanita;
-    } else {
-      return Dosen.JenisKelamin.Pria;
-    }
+    return Dosen.JenisKelamin.valueOf(value);
   }
 }
