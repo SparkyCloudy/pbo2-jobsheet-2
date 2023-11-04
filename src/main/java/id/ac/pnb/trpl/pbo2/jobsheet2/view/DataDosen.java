@@ -19,8 +19,8 @@ public class DataDosen {
   private JTextField tfNama;
   private JTextField tfTelpon;
   private JTextField tfNidn;
-  private JRadioButton lakiLakiRadioButton;
-  private JRadioButton perempuanRadioButton;
+  private JRadioButton rbPria;
+  private JRadioButton rbWanita;
   private JButton simpanButton;
   private JButton ubahButton;
   private JButton keluarButton;
@@ -70,10 +70,10 @@ public class DataDosen {
     simpanButton.setFocusable(false);
     ubahButton.setFocusable(false);
 
-    lakiLakiRadioButton.setFocusable(false);
-    lakiLakiRadioButton.setActionCommand("Pria");
-    perempuanRadioButton.setFocusable(false);
-    perempuanRadioButton.setActionCommand("Wanita");
+    rbPria.setFocusable(false);
+    rbPria.setActionCommand("Pria");
+    rbWanita.setFocusable(false);
+    rbWanita.setActionCommand("Wanita");
   }
 
   private Dosen.JenisKelamin checkJenisKelamin() {
